@@ -12,6 +12,10 @@ then go into the directory and :
 
 `yarn` or `npm install` 
 
+If you want to launch the test : 
+
+`npm run test`
+
 Once it's done run :
 
 `npm run start`
