@@ -1,6 +1,6 @@
 # Canvas gravity 
 
-* Demo : https://yieldify-test-zoptpeiixi.now.sh/
+* Demo :  https://priceless-shockley-265866.netlify.com
 
 Repository created in order to learn Canvas.
 
