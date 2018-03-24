@@ -1,13 +1,19 @@
 'use strict';
 
-import { randomIntFromInterval } from './utility';
+import { randomIntFromInterval, randomColor } from './utility';
 
 describe('Test Methods from Utility.js', () => {
 
-    it('Should do something but maybe not', () => {
+    it('Should return a number between 1 and 9', () => {
         let number = randomIntFromInterval( 1, 9 );
 
-        expect(number).toBeGreaterThan(1);
-        expect(number).toBeLessThan(9);
+        expect(number).toBeGreaterThanOrEqual(1);
+        expect(number).toBeLessThanOrEqual(9);
+    });
+
+    it('Should return a random rgba color', () => {
+        let color = randomColor();
+
+        expect(color).toContain('rgba(');
     });
 });
