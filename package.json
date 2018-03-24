@@ -4,8 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack",
-    "build": "webpack",
+    "start": "webpack --config webpack.prod.js",
+    "dev": "webpack  --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "jest --coverage"
   },
   "keywords": [],
