@@ -6,21 +6,51 @@
   "scripts": {
     "start": "webpack",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
     "browser-sync": "^2.18.8",
     "browser-sync-webpack-plugin": "^1.1.4",
     "css-loader": "^0.28.11",
+    "jest": "^22.0.1",
+    "jest-cli": "^21.2.1",
+    "jest-css-modules": "^1.1.0",
+    "regenerator-runtime": "^0.11.1",
     "style-loader": "^0.20.3",
     "webpack": "^2.5.1"
+  },
+  "jest": {
+    "setupFiles": ["<rootDir>/jest.init.js"],
+    "collectCoverage": true,
+    "modulePathIgnorePatterns": [],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text-summary",
+      "lcov"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "webpack.config.js"
+    ],
+    "collectCoverageFrom": [
+      "./src/js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    },
+    "transform": {".*": "<rootDir>/node_modules/jest-css-modules"}
   }
 }

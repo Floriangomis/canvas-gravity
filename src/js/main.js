@@ -1,6 +1,7 @@
 import '../style/style.css';
 import Ball from './ball';
-import { cleanCanvas, writeOnCanvas, randomIntFromInterval } from './utility';
+import { randomIntFromInterval } from './utility';
+import { cleanCanvas, writeOnCanvas } from './utility-canvas';
 
 // Entry point of the program
 let canvas = document.querySelector('canvas');
