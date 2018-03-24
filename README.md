@@ -1,6 +1,6 @@
 # Canvas gravity 
 
-* Demo : https://yieldify-test-dlbrhymsqe.now.sh/
+* Demo : https://yieldify-test-zoptpeiixi.now.sh/
 
 Repository created in order to learn Canvas.
 
