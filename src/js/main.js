@@ -35,7 +35,6 @@ clearBtn.addEventListener('click', e => {
     arrayOfCircle = [];
 });
 dropBtn.addEventListener('click', () => {
-    arrayOfCircle = [];
     dropBall();
 });
 // Allow to clean the canvas when resizing the window and avoid to create buggy ball
@@ -65,8 +64,13 @@ let animate = () => {
     writeOnCanvas({x: 10, y: 50}, "Click on the canvas to pop ball")
     writeOnCanvas({x: canvas.width - 200, y: 50}, "Number of Balls : " + arrayOfCircle.length)
 
-    arrayOfCircle.map( (val) => {
-        val.update();
+    arrayOfCircle.map( (val, index) => {
+        if(val.x && val.y) {
+            val.update();
+        } else {
+            //remove from the array
+            arrayOfCircle.splice(index, 1);
+        }
     })
     requestAnimationFrame(animate);
 };
