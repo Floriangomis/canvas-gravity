@@ -31,7 +31,7 @@ module.exports = {
             server: { baseDir: ['dist'] },
             files: ['./dist/*']
         }),
-        // new webpack.optimize.UglifyJsPlugin({minimize: true})
+        new webpack.optimize.UglifyJsPlugin({minimize: true})
     ],
     watch: true,
     devtool: 'source-map'
