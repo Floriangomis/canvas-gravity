@@ -5,7 +5,6 @@ canvas {
 
 body {
     margin: 0;
-
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
